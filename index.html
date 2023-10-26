@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing-page</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather:ital,wght@1,900&display=swap');
+
+
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            
+        }
+        
+        nav{   
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            padding-bottom: 10px;
+            padding-left: 5vw;
+            padding-right: 5vw;
+         
+            
+        }
+        .navbar li{
+            text-align: center;
+            list-style: none;
+            display: inline-block;
+            margin: 7px;
+            color: white;
+            font-size:20px;
+          
+        }
+        .navbar li i:hover{
+            color:rgb(36, 25, 4);
+        }
+      
+        .firstheader{
+            background-image:linear-gradient(to right, rgb(222, 222, 97),rgb(240, 109, 131),#fc0fc0) ;
+            height: 40px;   
+        }
+        .register{
+            color: white;
+            border: 2px solid white;
+            padding: 2px 30px;
+            width: 182px;
+            border-radius: 30px;
+            font-weight: bolder;
+
+        }
+        .register:hover{
+            color: white;
+            background-color: black;
+           
+        }
+
+        .secheader
+        {
+           
+            background-color: white;
+            padding-left: 65px;
+            
+            
+
+            
+        }
+        label{
+            color:red;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1px;
+            font-size: 25px;
+            font-weight: bolder;
+            font-family: 'Merriweather', serif;
+            
+            
+        }
+       
+        .landingpage i{
+            color: aquamarine;
+            
+            font-size: 28px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+      
+     
+        .navbarsecond ul>li{
+             color: black;
+             size: 50%;
+             font-weight: bold; 
+             height: 50px;
+            padding-top: 10px;
+             
+             
+              
+        }
+        .navbarsecond ul>li:hover
+        {
+            background-color: rgb(232, 175, 70);
+            cursor: pointer;
+         
+        }
+        .search{
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 20px;
+            padding-top: 17px;
+            padding-left: 3px;
+            
+        }
+
+        .secheader
+        {
+            display: flex;
+            align-self: baseline;
+            margin-left: 226px;
+           
+        }
+
+        .background 
+        {
+            position: absolute;
+            height: 70vh;
+            background-size: cover;
+            width:99vw;
+            
+            
+            
+        }
+        
+        .text {
+            background-color: whitesmoke;
+            width: 61%;
+            height: 58%;
+            padding: 1%;
+            position: relative;
+            top: 15vh;
+            left: 18vw;
+            border-radius: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            opacity: 0.8;
+            
+
+            
+            
+        }
+        
+        .text h2{
+         
+            position: relative;
+            font-size: 3vw;
+            color: #252839;
+            -webkit-text-stroke: 0.07vw #383d52;
+            text-transform: uppercase;
+            opacity: 100%;
+            
+           
+           
+        }
+        h2::before
+        {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            color:#01fe87;
+            -webkit-text-stroke: #383d52;
+            border-right: 2px solid #01fe87;
+           
+            animation: animate 6s linear infinite;
+            overflow: hidden;
+
+
+        }
+       
+
+        @keyframes animate
+        {
+            0%,10%,100%
+            {
+                width: 0%;
+            }
+            70% 
+            {
+                width:30%;
+            }
+          
+        }
+        .text h1
+        {
+            font-size: 50px;
+            font-weight: bolder;
+            margin-top: 4rem;
+        }
+        .text p{
+            font-size: larger;
+        }
+        #line
+        {
+            border: 3px solid grey ;
+            position: absolute;
+            width: 48%;
+            opacity: 100%;
+           
+            
+        }
+        .readmore
+        {
+            border:none;
+            height: 8%;
+            width: 15%;
+            border-radius: 50px;
+            background-image:linear-gradient(to right, rgb(222, 222, 97),rgb(240, 109, 131),#fc0fc0) ;
+            opacity: 100%;
+            color:white;
+            font-size: larger;
+           
+            position: relative;
+            top:22%;
+            left: 28%;
+            padding-left: 25px;
+            padding-top: 0px;
+           
+        }
+        .request
+        {
+            
+            height: 8%;
+            width: 25%;
+            border-radius: 50px;
+            color:white;
+            font-size: larger;  
+            background-image:linear-gradient(to right, rgb(222, 222, 97),rgb(240, 109, 131),#fc0fc0) ;
+            opacity: 100%;
+            position: relative;
+            left: 45%;
+            top: 14%;
+            padding-left: 25px;
+            padding-top:0px ;
+
+        }
+        .readmore:hover
+        {
+            cursor: pointer;
+        }
+        .request:hover
+        {
+            cursor: pointer;
+        }
+        .text p
+        {
+            font-weight: 500;
+            position: relative;
+            top:20px;
+            opacity: 100%;
+            
+        }
+        .landingpage
+        {
+            margin-right: 100px;
+        }
+        .secondnavbar{
+            padding-top: 10px;
+            margin-left: -139px;
+            
+            width: 100%;
+            
+         
+        }
+        .navbarsecond
+        {
+            margin-left: -13vw;
+            
+            
+        }
+         .advertise
+       {
+            position: relative;
+            top: 70vh;
+            height: 10em;
+            width: 100vw;
+            background-image:linear-gradient(to right, rgb(222, 222, 97),rgb(240, 109, 131),#fc0fc0) ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            color: white;
+            
+            
+            
+       }
+
+     
+       .firstbox i,h1{
+           
+            display: inline-block;
+            padding-left: 29px; 
+       }
+       
+
+       .about
+       {    position: relative;
+            top: 70vh;
+            width: 99vw;
+            height: 100vh;
+            color: black;
+            padding: 200px;
+            padding-top: 100px;
+           
+       }
+
+       hr{
+        
+            border: 3px solid grey ;
+            position: relative;
+            width: 30%;
+            opacity: 100%;
+            margin-bottom: 20px;
+            font-size: large;
+           
+       }
+      
+      
+       
+         
+            
+           
+            
+       
+    
+    </style>
+</head>
+<body>
+
+        <header class="firstheader">
+            <nav class="navbar">
+               
+                <div class="social">
+                    <ul>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-threads"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> 123-456-789 </li>
+                        <li><i class="fa-solid fa-envelope"></i> abc@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="register">
+                    Register & login
+                </div>
+            </nav>
+        </header>
+
+
+
+
+
+
+    
+        <header class="secheader">
+            <nav class="navbar secondnavbar">
+
+               <div class="landingpage">
+                <i class="fa-brands fa-creative-commons-share"></i> <label for="">Agency</label>
+               </div>
+                
+               <div class="navbarsecond">
+                    <ul>
+                        <li>Home</li>
+                        <li>Page</li>
+                        <li>Services</li>
+                        <li>Technologies</li>
+                        <li>Contact</li>
+                        <li>Buy Now</li>
+                    </ul>
+               </div>
+
+               <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+            </nav>
+        </header>
+   
+
+
+        <div class="background" style="background-image: url(./assets/background1.jpg);" >
+
+          <div class="text">
+
+               
+                <br>
+                <h2 data-text="creative"></h2>
+              
+
+                <h1> DIGITAL    AGENCY  </h1><hr id="line">
+
+                <p>
+                    Traditional Digital Agencies One of the most definitive aspects of creative agencies is that they tend to value the visual design of all marketing and advertising collateral over the technical and functional aspects of a 
+                    campaign. Their expertise and passion often lies in creative design and public relations vs. newer and more technical agency practices like SEO, Digital Marketing, Content Marketing, Social Media, Responsive Website Design, etc.
+                </p>
+                <div class="readmore">Read More</div>
+                <div class="request">Request a Consultant</div>
+               
+          </div>
+
+    
+        </div>
+
+        <div class="advertise">
+            <div class="firstbox">
+                <i class="fa-solid fa-rocket"></i><h1>Launching  business </h1>
+                <p>  “Chase the vision, not the money; the money will end up following you.”<br> 
+                    –Tony Hsieh, Zappos CEO
+                </p>
+                  
+               
+            </div>
+            <div class="secondbox">
+
+                <i class="fa-solid fa-phone"></i><h1>Online Support Team</h1>
+                <p>"Your most unhappy customers are your greatest source of learning." <br>
+                    - Bill Gates (Amanda Austin)
+                </p>
+            </div>
+            <div class="thirdbox">
+
+                <i class="fa-solid fa-timer"></i><h1>Time Management</h1>
+                <p>
+                    "The key is in not spending time, but in investing it."<br>
+                     -- Stephen R. Covey
+                </p>
+            </div>
+        </div>
+
+
+        <div class="about" target="#">
+            
+                <h1>ABOUT US</h1>
+                <hr>
+                <h3>15 Years, we passionate about achieving better results for our clients </h3><br>
+                <p>
+                    We’re here because the world keeps speeding up, creating an ever-widening gap between who you are, and who you need to reach
+
+                    We offer the best of both worlds: big brand expertise, but in a package that’s agile enough to bring new & disruptive brands into the big leagues at speed and scale.
+                    
+                    We put ourselves on the map acting as elite special forces for large organizations like Merck Pharmaceuticals, Chiquita, and Airbnb – launching scalable projects that made a real impact on revenue and efficiency.
+                    
+                    We focus on your bottom line, and what it really takes to move the needle.
+                    
+                    Tell us your business challenges, your revenue goals, and the kind of ROAS (Return on Advertising Spend) you’re looking to generate – and we’ll tell you how to get there.
+                    
+                    Awards & Accolades
+                    3x Winner, Mobile Marketing Association Global Smarties Awards
+                    2x Winner, Hermes Creative Awards
+                    Winner, Mobile Marketing Magazine Effective Mobile Marketing Awards
+                    Inc 5000 list
+                    ITV GameChangers Award
+                    Top 25 Digital Agencies, Agency Spotter
+                    #32 Global Business Impact Index, Digital/Specialst Agencies, Mobile Marketing Association
+                    Top 50 Creative Agencies, Agency Spotter
+                    Top 10 Ad Agencies, Agency Spotter
+                    Nominee, Digiday Awards
+                    <br>
+                    <b>
+                        List of Services:
+                    </b>
+                    <br><br>
+                    <ul style="list-style: none;">
+                        <li>Video Production</li>
+                        <li>Tech Development</li>
+                        <li>Media & Advertising</li>
+                    </ul>
+                 
+                   
+                </p>
+       
+
+        </div>
+ 
+    
+ 
+    
+
+
+    <script src="https://kit.fontawesome.com/4cc7257a1c.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
